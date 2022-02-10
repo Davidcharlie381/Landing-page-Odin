@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+/* General */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: none;
+}
+
+li {
+  list-style: none;
+  transition: .5s;
+}
+
+/* Header */
+
+header {
+  background: #1F2937;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1F2937;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+span {
+  color: #3882F6;
+}
+
+li:hover {
+  transform: scale(1.3);
+  color: #3882F6;
+  border-bottom: 2px dashed white;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+/* Hero section */
+
+.hero-main {
+  background: #1F2937;
+  margin-top: -5px;
+  padding-bottom: 100px;
+}
+
+.hero {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-b:hover {
+  background: #F9FAF8;
+  color: #3882F6;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-top: -15px;
+}
+
+.sign-up {
+  padding: 0.6em 1.2em;
+  background: #3882F6;
+  border: none;
+  border-radius: 5px;
+  color: #F9FAF8;
+  font-weight: 500;
+  outline: none;
+  transition: background .5s;
+}
+
+.hero-img {
+  width: 50%;
+  background: lightblue;
+  height: 250px;
+  margin-top: 50px;
+  transition: .5s;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.hero-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Team section */
+
+.team-main {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.team-desc h2 {
+  color: #1F2937;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.team {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.team-img {
+  width: 150px;
+  height: 160px;
+  border: 3px solid #3882F6;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  
+}
+
+.ma p {
+  font-weight: 300;
+}
+
+/* Aside section */
+
+.aside-section {
+  background: #E5E7EB;
+  padding: 100px 180px;
+}
+
+.quote p {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+strong {
+  float: right;
+  margin: -10px 15px;
+  font-weight: 500;
+}
+
+/* Cta section */
+
+.cta-section {
+  padding: 70px 90px;
+}
+
+
+.cta-container {
+  background: #3882F6;
+  color: #F9FAF8;
+  padding: 20px 30px;
+  border-radius: 7px;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-desc p {
+  margin-top: -10px;
+}
+
+.ctab {
+  border: 2px solid #F9FAF8;
+}
+
+.ctab:hover {
+  background: #F9FAF8;
+  color: #173459;
+}
+
+/* Footer */
+
+footer {
+  background: #1F2937;
+  text-align: center;
+  padding: 50px;
+  color: #F9FAF8;
+  font-weight: 200;
+}
+
+
+@media (max-width: 500px) {
+  
+  /* Header */
+  
+  .nav-link {
+    display: none;
+  }
+  
+  /* Hero */
+  
+  .hero-text, .hero-img {
+    width: 100%;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Aside */
+  
+  .aside-section {
+    padding: 30px 40px;
+  }
+  
+  .quote p {
+    font-size: 1rem;
+  }
+  
+  /* CTA section */
+  
+  .cta-section {
+    padding: 70px 40px;
+  }
+  
+  .content {
+    display: block;
+    text-align: center;
+  }
+  
+  .cta-container {
+    padding: 50px 20px;
+  }
+  
+  .ctab {
+    margin-top: 30px;
+  }
+  
+  .cta-desc p {
+    margin-top: 20px;
+  }
+}
